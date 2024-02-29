@@ -37,7 +37,8 @@ def get_ops_dir():
     else:
       tmp_version = tf.__version__.split('.')
       tmp_version = '.'.join(tmp_version[:2])
-      return os.path.join(ops_dir, tmp_version)
+      ops_dir = os.path.join(ops_dir, tmp_version)
+    return ops_dir
   else:
     return None
 
