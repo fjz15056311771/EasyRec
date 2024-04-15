@@ -12,6 +12,7 @@ import "easy_rec/python/protos/dropoutnet.proto";
 import "easy_rec/python/protos/dssm.proto";
 import "easy_rec/python/protos/collaborative_metric_learning.proto";
 import "easy_rec/python/protos/mmoe.proto";
+import "easy_rec/python/protos/mmoep.proto";
 import "easy_rec/python/protos/esmm.proto";
 import "easy_rec/python/protos/dbmtl.proto";
 import "easy_rec/python/protos/ple.proto";
@@ -91,6 +92,7 @@ message EasyRecModel {
         DBMTL dbmtl = 303;
         SimpleMultiTask simple_multi_task = 304;
         PLE ple = 305;
+        MMoEP mmoep = 306;
 
         // PPNetV3 ppnet = 306;
 

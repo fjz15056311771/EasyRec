@@ -13,7 +13,10 @@ from tensorflow.python.platform import gfile
 from easy_rec.python.inference.predictor import Predictor
 from easy_rec.python.utils import numpy_utils
 from easy_rec.python.utils import test_utils
-
+os.environ['oss_path'] = 'oss://data-junfeng12.oss-cn-hangzhou.aliyuncs.com'
+os.environ['oss_endpoint'] = 'oss-cn-hangzhou.aliyuncs.com'
+os.environ['oss_ak'] = ''
+os.environ['oss_sk'] = ''
 
 class LocalIncrTest(tf.test.TestCase):
 
